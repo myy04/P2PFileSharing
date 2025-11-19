@@ -74,7 +74,7 @@ class ServerMain:
         while True:
             client = serverSocket.accept()
             t = ServerThread(client, self)
-            t.run()
+            t.start()
 
 
 class ServerThread(threading.Thread):
