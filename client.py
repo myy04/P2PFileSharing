@@ -269,7 +269,7 @@ class ClientThread(threading.Thread):
 
 def main():
     clientMain = ClientMain()
-    clientMain.run()
+    clientMain.start()
 
 if __name__ == '__main__':
     args = sys.argv
